@@ -13,7 +13,7 @@ pipeline {
         }
         stage('third stage'){
             steps {
-                sh “touch lab3.sh" 
+                sh “touch lab3.sh"
             }
         }
     }
