@@ -1,14 +1,18 @@
 pipeline {
     agent any
     stages {
-        stage('Pipeline Stages'){
+        stage('Build'){
             steps {
-                sh "ls"
+                sh "sh build.sh"
             }
         }
-        stage('second stage'){
+        stage('Test'){
             steps {
-                sh "pwd" 
+                sh "sh test.sh" 
+            }
+        stage('Deploy'){
+            steps {
+                sh "sh deploy.sh" 
             }
         }
     }
