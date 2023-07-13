@@ -11,7 +11,7 @@ pipeline {
                 sh “pwd” 
             }
         }
-        stage(‘third stage’){
+        stage('third stage'){
             steps {
                 sh “touch lab3.sh” 
             }
