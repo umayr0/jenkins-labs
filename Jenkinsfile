@@ -16,3 +16,4 @@ pipeline {
                 sh “touch lab3.sh” 
             }
         }
+    }
